@@ -1,0 +1,310 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="850.4,3696.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Mail.Activities.Business.ForEachMail</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="688,3632" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="mailList" />
+      <Variable x:TypeArguments="x:String" Name="output" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="gameTitles" />
+      <Variable x:TypeArguments="x:String" Name="pdfFilePath" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetOutlookMailMessages FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" Account="marvi.hendriks@student.pxl.be" DisplayName="Get Outlook Mail Messages" Filter="[SenderEmailAddress] = 'robbe@brobots.be'" GetAttachements="False" sap:VirtualizedContainerService.HintSize="625.6,64.8" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="Postvak IN" MarkAsRead="False" Messages="[mailList]" OnlyUnreadMessages="False" OrderByDate="NewestFirst" Top="30" />
+    <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="625.6,1328" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[mailList]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="snm:MailMessage">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="currentMailMessage" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592,1122.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If Condition="[currentMailMessage.Attachments.Any]" sap:VirtualizedContainerService.HintSize="529.6,1036" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,622.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="folderName" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[folderName]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[Path.Combine("C:\Users\12101338\Desktop\attachments")]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;folder name&quot; + folderName]" />
+                  <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="433.6,120.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[folderName]" />
+                  <ui:SaveMailAttachments Attachments="{x:Null}" DisplayName="Save Attachments" ExcludeInlineAttachments="False" Filter="\.(pdf|PDF)$" FolderPath="[folderName]" sap:VirtualizedContainerService.HintSize="433.6,111.2" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_2" Message="[currentMailMessage]" OverwriteExisting="False" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,252" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;there is no attachment in +&quot; + currentMailMessage.Subject]" />
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+    <Assign sap:VirtualizedContainerService.HintSize="625.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[pdfFilePath]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[Directory.GetFiles("C:\Users\12101338\Desktop\attachments\", "*.pdf")(0)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="C:\Users\12101338\Desktop\attachments\Wed, 28 Feb 2024 090658 +0100\RPA_Oefening_Game_List_v1.0.pdf" sap:VirtualizedContainerService.HintSize="625.6,123.2" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[output]" />
+    <Assign sap:VirtualizedContainerService.HintSize="625.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(x:String)">[gameTitles]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(x:String)">[System.Text.RegularExpressions.Regex.Matches(output, "\d+\.\s+(.+)").Cast(Of System.Text.RegularExpressions.Match)().Select(Function(match) match.Groups(1).Value).ToList()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="C:\Users\12101338\Desktop\gameTitles.txt" sap:VirtualizedContainerService.HintSize="625.6,174.4" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[String.Join(Environment.NewLine, gameTitles)]" />
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="625.6,1609.6" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[gameTitles]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,1420.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Movie Reviews, TV Reviews, Game Reviews, and Music Reviews - Metacritic" sap:VirtualizedContainerService.HintSize="449.6,1314.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="def9a18b-36fd-4e3d-b07a-fc807d97aa57" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1057.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="gameTitle" />
+                      <Variable x:TypeArguments="x:String" Name="Rating" />
+                      <Variable x:TypeArguments="x:String" Name="releaseDate" />
+                      <Variable x:TypeArguments="x:String" Name="Platforms" />
+                      <Variable x:TypeArguments="x:String" Name="Studio" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text 'Counter-Strike 2'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="def9a18b-36fd-4e3d-b07a-fc807d97aa57" TextString="[gameTitle]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.metacritic.com/game/counter-strike-2/" CvTextArea="1231, 536, 337, 37" CvType="AnyWordGroup" DesignTimeRectangle="1235, 532, 514, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' isleaf='1' parentid='__layout' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' isleaf='1' parentid='__layout' tag='DIV' /&gt;" Guid="83a21df4-7122-42db-b904-0bfad35471ef" InformativeScreenshot="3aefdbfd656d55fc515aca5d926e1d93.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Counter-Strike 2 - Metacritic' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text '82'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="def9a18b-36fd-4e3d-b07a-fc807d97aa57" TextString="[Rating]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.metacritic.com/game/counter-strike-2/" CvElementArea="1665, 719, 88, 87" CvTextArea="1679, 744, 56, 35" CvTextArgument="82" CvType="Button" DesignTimeRectangle="1666, 720, 86, 85" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='82' parentid='__layout' tag='SPAN' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl parentid='__layout' tag='SPAN' type='' class='' /&gt;" Guid="86fa3451-ba57-4206-8f81-3af6184bb77b" InformativeScreenshot="b8df209064c43c3e9e07f331b68381f0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Counter-Strike 2 - Metacritic' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Sep 27, 2023'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="def9a18b-36fd-4e3d-b07a-fc807d97aa57" TextString="[releaseDate]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.metacritic.com/game/counter-strike-2/" CvTextArea="1357, 655, 118, 18" CvType="AnyWordGroup" DesignTimeRectangle="1359, 652, 117, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl class='u-text-uppercase' parentid='__layout' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='u-text-uppercase' parentid='__layout' tag='SPAN' type='' /&gt;" Guid="2a69bc69-9d57-43e8-93d4-ca41ee7e31a7" InformativeScreenshot="1e463f622b95679b2c45735155653dc2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Counter-Strike 2 - Metacritic' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Platforms'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="def9a18b-36fd-4e3d-b07a-fc807d97aa57" TextString="[Platforms]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.metacritic.com/game/counter-strike-2/" CvTextArea="1514, 931, 27, 18" CvType="AnyWordGroup" DesignTimeRectangle="1515, 926, 27, 33" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;webctrl isleaf='1' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' tag='LI' type='' class='c-gameDetails_listItem g-color-gray70 u-inline-block' /&gt;" Guid="079555cb-7be0-4153-a394-20ba11a99b63" InformativeScreenshot="ad6475f2852c8e96d49f705f04a8b398.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Counter-Strike 2 - Metacritic' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArea="1402, 932, 93, 17" CvTextArgument="Platforms:" CvType="Text" DesignTimeRectangle="1403, 926, 92, 33" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Platforms:' parentid='__layout' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Platforms:' parentid='__layout' tag='SPAN' type='' class='g-text-bold u-inline' check:innerText='Platforms:' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Publisher'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="def9a18b-36fd-4e3d-b07a-fc807d97aa57" TextString="[Studio]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.metacritic.com/game/counter-strike-2/" CvTextArea="1511, 931, 134, 17" CvType="AnyWordGroup" DesignTimeRectangle="1513, 941, 131, 32" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Valve Software' parentid='__layout' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__layout' tag='SPAN' type='' class='g-outer-spacing-left-medium-fluid g-color-gray70 u-block' /&gt;" Guid="5623c651-1cc5-415e-9792-0347c0923629" InformativeScreenshot="b0b150bfe09d7a00f80868cd8fdfd1f8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Counter-Strike 2 - Metacritic' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArea="1401, 939, 93, 18" CvTextArgument="Publisher:" CvType="Text" DesignTimeRectangle="1403, 941, 90, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Publisher:' parentid='__layout' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Publisher:' parentid='__layout' tag='SPAN' type='' class='g-text-bold u-block' check:innerText='Publisher:' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="0d2f437a780326d3c3823e52b73e4c82.jpg" Selector="&lt;html app='chrome.exe' title='Movie Reviews, TV Reviews, Game Reviews, and Music Reviews - Metacritic' /&gt;" Title="Movie Reviews, TV Reviews, Game Reviews, and Music Reviews - Metacritic" Url="[&quot;https://www.metacritic.com/game&quot; + currentText.Replace(&quot; &quot;, &quot;-&quot;)]" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="e88f8b0b-55fc-410d-b20d-b6d63f9fc49b" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Rating'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" Version="V3">
+                      <uix:NExtractData.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="1668, 722, 80, 80" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aria-label='Metascore 82 out of 100' tag='DIV' /&gt;" Guid="df673b89-30aa-449a-a638-ac4d2e77ed28" InformativeScreenshot="8f18b56c70750092c6da3bb4b90cd09c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Counter-Strike 2 - Metacritic' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NExtractData.Target>
+                    </uix:NExtractData>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="cac3ab7503876d7e654245dcd57fdb0f.jpg" Selector="&lt;html app='chrome.exe' title='Counter-Strike 2 - Metacritic' /&gt;" Title="Counter-Strike 2 - Metacritic" Url="https://www.metacritic.com/game/counter-strike-2/" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>

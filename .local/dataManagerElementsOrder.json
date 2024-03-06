@@ -1,0 +1,49 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_6",
+        "Studio&Sequence_7",
+        "Platforms&Sequence_7",
+        "releaseDate&Sequence_7",
+        "Rating&Sequence_7",
+        "gameTitle&Sequence_7",
+        "pdfFilePath&Sequence_1",
+        "gameTitles&Sequence_1",
+        "output&Sequence_1",
+        "folderName&Sequence_4",
+        "mailList&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "../../../Desktop/test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "gameList&Sequence_6",
+        "pdfText&Sequence_6",
+        "variable1&Sequence_6",
+        "gameTitles&Sequence_6",
+        "selectedPdfInfo&Sequence_6",
+        "mailList&Sequence_1",
+        "output&Sequence_1",
+        "folderName&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
